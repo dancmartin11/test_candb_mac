@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "test_candb_mac_backend": {
+      "main": "src/test_candb_mac_backend/main.mo",
+      "type": "motoko"
+    },
+    "test_candb_mac_frontend": {
+      "dependencies": [
+        "test_candb_mac_backend"
+      ],
+      "source": [
+        "src/test_candb_mac_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "mops sources"
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
